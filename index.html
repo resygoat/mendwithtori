@@ -33,16 +33,15 @@
 
         /* Splash Screen */
         .splash-screen {
-            position: fixed;
-            inset: 0;
-            background: linear-gradient(135deg, var(--pink-primary) 0%, var(--pink-deep) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            animation: fadeOut 0.8s ease-in-out 1s forwards;
-        }
-
+    position: fixed;
+    inset: 0;
+    background: white;  /* Change this line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 0.8s ease-in-out 2.5s forwards;
+}
         .splash-content {
             text-align: center;
             animation: scaleIn 0.6s ease-out;
@@ -617,11 +616,10 @@
 <body>
     <!-- Splash Screen -->
     <div class="splash-screen">
-        <div class="splash-content">
-            <div class="splash-logo">Mend With Tori</div>
-            <div class="splash-tagline">Bringing Joy Through Creativity</div>
-        </div>
+    <div class="splash-content">
+        <img src="IMG_4323.jpeg" alt="Mend With Tori" style="max-width: 80%; height: auto; animation: scaleIn 0.6s ease-out;">
     </div>
+</div>
 
     <!-- Main Content -->
     <div class="main-content">
