@@ -37,19 +37,26 @@
 
         /* Navigation */
         nav {
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 1rem 4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--pink-soft);
-        }
+    position: relative;  /* Scrolls away on mobile */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--pink-soft);
+}
+
+/* Only make it fixed on desktop/tablet */
+@media (min-width: 769px) {
+    nav {
+        position: fixed;
+    }
+}
 
         .logo {
             font-family: 'Fredoka', sans-serif;
