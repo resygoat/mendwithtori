@@ -31,73 +31,7 @@
             overflow-x: hidden;
         }
 
-        /* Splash Screen */
-        .splash-screen {
-    position: fixed;
-    inset: 0;
-    background: white;  /* Change this line */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    animation: fadeOut 0.8s ease-in-out 2.5s forwards;
-}
-        .splash-content {
-            text-align: center;
-            animation: scaleIn 0.6s ease-out;
-        }
-
-        .splash-logo {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 5rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 1rem;
-            animation: float 2s ease-in-out infinite;
-        }
-
-        .splash-tagline {
-            font-size: 1.5rem;
-            color: var(--pink-soft);
-            font-weight: 500;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease-out 0.3s forwards;
-        }
-
-        @keyframes fadeOut {
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
+    
         /* Main Content */
         .main-content {
             opacity: 0;
@@ -614,12 +548,6 @@
     </style>
 </head>
 <body>
-    <!-- Splash Screen -->
-    <div class="splash-screen">
-    <div class="splash-content">
-        <img src="IMG_4323.jpeg" alt="Mend With Tori" style="max-width: 100%; height: auto; animation: scaleIn 0.6s ease-out;">
-    </div>
-</div>
 
     <!-- Main Content -->
     <div class="main-content">
